@@ -1,3 +1,18 @@
+document.getElementById("potato_btn_ham").addEventListener("click",  (e)=>{
+    loadData("potato");
+})
+
+document.getElementById("soup_btn_ham").addEventListener("click",  (e)=>{
+    loadData("soup");
+})
+
+document.getElementById("chicken_btn_ham").addEventListener("click",  (e)=>{
+    loadData("chicken");
+})
+
+document.getElementById("beef_btn_ham").addEventListener("click",  (e)=>{
+    loadData("beef");
+})
 const loadData = (type) => {
     if(type!="potato")
     {
@@ -57,7 +72,7 @@ const showItemWise = (items) => {
     document.getElementById("mealContainer").innerHTML="";
     const meal_container = document.getElementById("mealContainer");
 
-console.log(items)
+     
     items.forEach(item => {
         const new_div = document.createElement("div");
         new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl";
