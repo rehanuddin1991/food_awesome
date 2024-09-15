@@ -16,47 +16,53 @@ document.getElementById("beef_btn_ham").addEventListener("click",  (e)=>{
 const loadData = (type) => {
     if(type!="potato")
     {
-        document.getElementById("potato_btn").style.backgroundColor="lightcoral";
+        document.getElementById("potato_btn").style.backgroundColor="midnightblue";
     }
     if(type=="potato")
     {
         document.getElementById("potato_btn").style.backgroundColor = "indigo";
         document.getElementById("potato_btn").style.color = "white";
-        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
+
+        document.getElementById("chicken_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("beef_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("soup_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("all_btn").style.backgroundColor = "midnightblue";
+         
     }
     if (type == "soup") {
         document.getElementById("soup_btn").style.backgroundColor = "indigo";
         document.getElementById("soup_btn").style.color = "white";
 
-        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("chicken_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("beef_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("all_btn").style.backgroundColor = "midnightblue";
     }
     if (type == "chicken") {
+        document.getElementById("potato_btn").style.backgroundColor="midnightblue";
         document.getElementById("chicken_btn").style.backgroundColor = "indigo";
         document.getElementById("chicken_btn").style.color = "white";
 
 
-        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("soup_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("beef_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("all_btn").style.backgroundColor = "midnightblue";
     }
     if (type == "beef") {
         document.getElementById("beef_btn").style.backgroundColor = "indigo";
         document.getElementById("beef_btn").style.color = "white";
 
 
-        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("soup_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("chicken_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("all_btn").style.backgroundColor = "midnightblue";
     }
     if (type == "all") {
         document.getElementById("all_btn").style.backgroundColor = "indigo";
         document.getElementById("all_btn").style.color = "white";
 
-        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
-        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("soup_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("chicken_btn").style.backgroundColor = "midnightblue";
+        document.getElementById("beef_btn").style.backgroundColor = "midnightblue";
     }
    
     const url =  (type=="all")? "https://www.themealdb.com/api/json/v1/1/search.php?s" : `https://www.themealdb.com/api/json/v1/1/search.php?s=${type}`;
