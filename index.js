@@ -1,4 +1,48 @@
 const loadData = (type) => {
+    if(type!="potato")
+    {
+        document.getElementById("potato_btn").style.backgroundColor="lightcoral";
+    }
+    if(type=="potato")
+    {
+        document.getElementById("potato_btn").style.backgroundColor = "indigo";
+        document.getElementById("potato_btn").style.color = "white";
+        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
+    }
+    if (type == "soup") {
+        document.getElementById("soup_btn").style.backgroundColor = "indigo";
+        document.getElementById("soup_btn").style.color = "white";
+
+        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+    }
+    if (type == "chicken") {
+        document.getElementById("chicken_btn").style.backgroundColor = "indigo";
+        document.getElementById("chicken_btn").style.color = "white";
+
+
+        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+    }
+    if (type == "beef") {
+        document.getElementById("beef_btn").style.backgroundColor = "indigo";
+        document.getElementById("beef_btn").style.color = "white";
+
+
+        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("all_btn").style.backgroundColor = "lightcoral";
+    }
+    if (type == "all") {
+        document.getElementById("all_btn").style.backgroundColor = "indigo";
+        document.getElementById("all_btn").style.color = "white";
+
+        document.getElementById("soup_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("chicken_btn").style.backgroundColor = "lightcoral";
+        document.getElementById("beef_btn").style.backgroundColor = "lightcoral";
+    }
    
     const url =  (type=="all")? "https://www.themealdb.com/api/json/v1/1/search.php?s" : `https://www.themealdb.com/api/json/v1/1/search.php?s=${type}`;
       
@@ -20,7 +64,7 @@ console.log(items)
         new_div.innerHTML = ` 
         <figure>
             <img
-            src=${item.strMealThumb} class="w-[80%] h-[90%] w-80  "
+            src=${item.strMealThumb} class="rounded-md w-[80%] h-[90%] w-80  "
             alt="Shoes" />
         </figure>
         <div class="card-body">

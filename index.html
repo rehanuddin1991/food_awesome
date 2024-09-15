@@ -49,11 +49,11 @@
                     </div>
                     <div class="navbar-end hidden lg:flex  sm:flex md:flex ">
                       <ul class="menu menu-horizontal ">
-                        <li><button onclick="loadData('potato')" class="bg-[indigo] hover:bg-[lightseagreen]">Potato</button></li> &nbsp;                        
-                        <li><button onclick="loadData('soup')"  class="bg-[lightcoral] hover:bg-[indigo]">Soup</button></li>&nbsp;                          
-                        <li><button onclick="loadData('chicken')"  class="bg-[lightcoral] hover:bg-[indigo]">Chicken</button></li>   &nbsp;                       
-                        <li><button onclick="loadData('beef')"  class="bg-[lightcoral] hover:bg-[indigo]">Beef</button></li>    &nbsp;                      
-                        <li><button onclick="loadData('all')"  class="bg-[lightcoral] hover:bg-[indigo]">All</button></li>                         
+                        <li><button id="potato_btn" onclick="loadData('potato')" class="bg-[indigo] hover:bg-[lightseagreen]">Potato</button></li> &nbsp;                        
+                        <li><button id="soup_btn" onclick="loadData('soup')"  class="bg-[lightcoral] hover:bg-[indigo]">Soup</button></li>&nbsp;                          
+                        <li><button id="chicken_btn" onclick="loadData('chicken')"  class="bg-[lightcoral] hover:bg-[indigo]">Chicken</button></li>   &nbsp;                       
+                        <li><button id="beef_btn" onclick="loadData('beef')"  class="bg-[lightcoral] hover:bg-[indigo]">Beef</button></li>    &nbsp;                      
+                        <li><button id="all_btn" onclick="loadData('all')"  class="bg-[lightcoral] hover:bg-[indigo]">All</button></li>                         
                          
                       </ul>
                     </div>
@@ -70,11 +70,39 @@
 
                 </section>
                 <!-- mealcard section end  --> 
+        <!-- faq section start  --> 
+                <section class="mt-4">
+                  <div class="collapse collapse-arrow bg-orange-400 text-black ">
+                    <input type="radio" name="my-accordion-2"  />
+                    <div class="collapse-title text-xl font-medium ">Why Food Awesome different?</div>
+                    <div class="collapse-content text-[whitesmoke] font-semibold">
+                      <p>We ensure product quality and we believe customer satisfaction.You can return our product any time without any cost if you don't like or find any problem</p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-orange-400 text-black ">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">How Many Branch Available in Bangladesh?</div>
+                    <div class="collapse-content text-[whitesmoke] font-semibold">
+                      <p>in 64 district we are available </p>
+                    </div>
+                  </div>
+                  <div class="collapse collapse-arrow bg-orange-400 text-black">
+                    <input type="radio" name="my-accordion-2" />
+                    <div class="collapse-title text-xl font-medium">Does Food Awesome provide online purchase facility?</div>
+                    <div class="collapse-content  text-[whitesmoke] font-semibold">
+                      <p>Yes, We provide food across the Bangladesh</p>
+                    </div>
+                  </div>
+                </section>
+                <!-- faq section end  --> 
              </main>
         </div>
 
      </div>
      <script src="index.js"></script>
+     <script>
+      loadData('potato');
+     </script>
     
 </body>
 </html>
