@@ -74,6 +74,8 @@ const loadData = (type) => {
 
 }
 
+ 
+
 const showItemWise = (items) => {
     document.getElementById("mealContainer").innerHTML="";
     const meal_container = document.getElementById("mealContainer");
@@ -81,7 +83,7 @@ const showItemWise = (items) => {
      
     items.forEach(item => {
         const new_div = document.createElement("div");
-        new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl  ";
+        new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl  mx-auto";
         new_div.innerHTML = ` 
         <figure>
             <img
@@ -92,9 +94,11 @@ const showItemWise = (items) => {
             <h2 class="card-title text-orange-500">${item.strMeal}</h2>
             <p>${item.strMeal}</p>
             <div class="card-actions justify-center">
-            <button class="btn btn-primary">Order Now</button>
+            <button class="btn btn-primary" onclick="ff()">Order Now</button>
             </div>
         </div>
+
+          
         `;
         meal_container.appendChild(new_div);
 
