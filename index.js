@@ -91,7 +91,7 @@ const showItemWise = (items) => {
         <div class="card-body">
             <h2 class="card-title text-orange-500">${item.strMeal}</h2>
             <p>${item.strMeal}</p>
-            <div class="card-actions justify-end">
+            <div class="card-actions justify-center">
             <button class="btn btn-primary">Order Now</button>
             </div>
         </div>
