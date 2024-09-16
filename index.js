@@ -81,7 +81,7 @@ const showItemWise = (items) => {
      
     items.forEach(item => {
         const new_div = document.createElement("div");
-        new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl";
+        new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl  ";
         new_div.innerHTML = ` 
         <figure>
             <img
