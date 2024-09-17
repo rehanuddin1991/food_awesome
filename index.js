@@ -95,6 +95,13 @@ const showItemWise = (items) => {
         <div class="card-body">
             <h2 class="card-title text-orange-500">${item.strMeal}</h2>
             <p class="text-[indigo]">${details}..</p>
+            <div class="rating">
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" checked="checked" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+                <input type="radio" name="rating-1" class="mask mask-star" />
+            </div> 
             <div class="card-actions justify-center">
             <button class="btn btn-primary" onclick="ff()">Order Now</button>
             </div>
