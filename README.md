@@ -11,5 +11,4 @@ Technologies i used
 4) Modern Javascript (ES6)
 5) Api call by ES6
 6) Vite
-7) Git and Github for version control here we 
-have 5 clickable menu. when you will click in a specific category, this will load related food. this site fully responsive. you could access through any devices and i think it would be fully smooth.
+7) Git and Github for version control  
