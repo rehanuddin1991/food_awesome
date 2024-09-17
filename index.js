@@ -82,6 +82,8 @@ const showItemWise = (items) => {
 
      
     items.forEach(item => {
+        //console.log(item);
+        let details=item.strInstructions.slice(0, 50);
         const new_div = document.createElement("div");
         new_div.classList = "card bg-base-100 mt-2  h-[400px] w-80 shadow-xl  mx-auto";
         new_div.innerHTML = ` 
@@ -92,7 +94,7 @@ const showItemWise = (items) => {
         </figure>
         <div class="card-body">
             <h2 class="card-title text-orange-500">${item.strMeal}</h2>
-            <p>${item.strMeal}</p>
+            <p class="text-[indigo]">${details}..</p>
             <div class="card-actions justify-center">
             <button class="btn btn-primary" onclick="ff()">Order Now</button>
             </div>
